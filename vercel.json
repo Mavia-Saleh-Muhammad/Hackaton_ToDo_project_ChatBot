@@ -9,7 +9,7 @@
   ],
   "headers": [
     {
-      "source": "/static/.*",
+      "source": "/static/(.*)",
       "headers": [
         {
           "key": "cache-control",
