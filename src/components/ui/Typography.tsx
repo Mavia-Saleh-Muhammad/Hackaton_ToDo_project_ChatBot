@@ -156,9 +156,9 @@ export function Tiny({ children, className = '', as: Tag = 'span' }: TypographyP
 /**
  * Label - Form labels (14px, weight 500)
  */
-export function Label({ children, className = '', as: Tag = 'label', ...props }: TypographyProps & React.LabelHTMLAttributes<HTMLLabelElement>) {
+export function Label({ children, className = '', ...props }: Omit<TypographyProps, 'as'> & React.LabelHTMLAttributes<HTMLLabelElement>) {
   return (
-    <Tag
+    <label
       className={`
         text-sm font-medium
         text-slate-700 dark:text-slate-300
@@ -167,7 +167,7 @@ export function Label({ children, className = '', as: Tag = 'label', ...props }:
       {...props}
     >
       {children}
-    </Tag>
+    </label>
   );
 }
 
