@@ -17,6 +17,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'The Evolution of Todo',
   description: 'A flagship todo application with AI-powered task management and premium design',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export const viewport = {
