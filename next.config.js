@@ -5,7 +5,7 @@ const nextConfig = {
 
   // Image optimization
   images: {
-            domains: ['localhost', 'itxharoon-todo-project.hf.space', 'bhaimavi353-todo.hf.space'],    formats: ['image/avif', 'image/webp'],
+            domains: ['localhost', 'bhaimavi353-todo.hf.space'],    formats: ['image/avif', 'image/webp'],
   },
 
   // Compiler options
